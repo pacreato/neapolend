@@ -11,8 +11,8 @@
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32.png">
-<link rel="apple-touch-icon" href="public/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>Neapol Lake — коропове озеро</title>
 <style>
 :root{--bg:#050505;--c:#12100c;--t:#f3e7c9;--m:#a8996f;--a:#d4a64a;--a2:#f5d98a;--b:#3a2f17;--g:linear-gradient(135deg,#f5d98a,#c89a3c 55%,#8a6420);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -55,7 +55,12 @@ footer{text-align:center;padding:24px;color:var(--m);font-size:13px;border-top:1
 .msg{padding:10px;border-radius:8px;margin-top:10px;background:#1e180b;border:1px solid var(--b)}
 #lb{position:fixed;inset:0;background:rgba(0,0,0,.94);display:flex;align-items:center;justify-content:center;z-index:50;cursor:zoom-out}#lb img{max-width:96%;max-height:96%}
 @media(max-width:720px){.wrap{flex-direction:column-reverse;padding:12px}nav{width:100%;position:static;flex-direction:row;overflow-x:auto;padding:6px}nav button{white-space:nowrap;text-align:center;padding:9px 12px}.logo{font-size:20px}}
-.ptable th{padding-top:16px;font-size:16px;border-bottom:1px solid var(--a)}.ptable tr:first-child th{padding-top:6px}.ptable td.pr{text-align:right;white-space:nowrap;font-weight:700;color:var(--a2);font-size:17px}.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}.feat{display:flex;gap:12px;padding:12px;border:1px solid var(--b);border-radius:10px;background:#0b0905}.fi{font-size:26px;line-height:1}.fd{color:var(--m);font-size:14px;margin-top:2px}.tel{font-size:24px;font-weight:700;margin-bottom:6px}.tel a{text-decoration:none;color:var(--a2)}.btns{display:flex;gap:10px;flex-wrap:wrap}.btns .btn{margin-top:6px;text-decoration:none;display:inline-block}.cw{position:relative}.cal{position:absolute;z-index:20;left:0;width:100%;max-width:340px;background:#0b0905;border:1px solid var(--a);border-radius:12px;padding:10px;box-shadow:0 10px 30px #000}.cal.hide{display:none}
+.ptable th{padding-top:16px;font-size:16px;border-bottom:1px solid var(--a)}.ptable tr:first-child th{padding-top:6px}.ptable td.pr{text-align:right;white-space:nowrap;font-weight:700;color:var(--a2);font-size:17px}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.feat{display:flex;gap:12px;padding:12px;border:1px solid var(--b);border-radius:10px;background:#0b0905}
+.fi{font-size:26px;line-height:1}.fd{color:var(--m);font-size:14px;margin-top:2px}.tel{font-size:24px;font-weight:700;margin-bottom:6px}.tel a{text-decoration:none;color:var(--a2)}
+.btns{display:flex;gap:10px;flex-wrap:wrap}.btns .btn{margin-top:6px;text-decoration:none;display:inline-block}.cw{position:relative}
+.cal{position:absolute;z-index:20;left:0;width:100%;max-width:340px;background:#0b0905;border:1px solid var(--a);border-radius:12px;padding:10px;box-shadow:0 10px 30px #000}.cal.hide{display:none}
 .ch{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;color:var(--a2);font-weight:700}.ch button{background:none;border:1px solid var(--b);color:var(--a2);border-radius:8px;width:36px;height:36px;font-size:18px;cursor:pointer}
 .cg{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.wd{text-align:center;color:var(--m);font-size:12px}
 .dy{aspect-ratio:1;border:1px solid var(--b);background:#14100a;color:var(--t);border-radius:8px;cursor:pointer;font:inherit;padding:0}.dy:hover:not(:disabled){border-color:var(--a)}.dy:disabled{opacity:.25;cursor:default}
@@ -63,51 +68,49 @@ footer{text-align:center;padding:24px;color:var(--m);font-size:13px;border-top:1
 .dy.comp{background:#4a2600;color:#ffd7a8;border:1px dashed #ff9a3c}
 .dy.cur{outline:2px solid var(--a2);font-weight:700}
 @keyframes glow{from{box-shadow:0 0 2px #ff3b30}to{box-shadow:0 0 12px #ff3b30}}
-.leg{font-size:12px;color:var(--m);margin-top:8px}.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:60;background:#241d0e;border:1px solid var(--a);padding:10px 16px;border-radius:10px;color:var(--t)}.cond{border:1px solid var(--a);border-radius:10px;padding:10px 14px;background:#0b0905;margin-bottom:8px}.cond ul{margin:6px 0 0;padding-left:20px}.chk{display:flex;gap:8px;align-items:flex-start;color:var(--t)!important;margin-top:12px}.chk input{margin-top:4px}.ptable input{margin:2px 0}.top svg{width:18px;height:18px;fill:currentColor;vertical-align:-4px;margin-right:6px}.fsoc{margin-bottom:8px}.fsoc a{display:inline-block;margin:0 10px;color:var(--a2)}.fsoc svg{width:28px;height:28px;fill:currentColor}.rules{margin:0;padding-left:28px}.rules li{padding:8px 0;border-bottom:1px solid var(--b)}.rules li:last-child{border:0}.rules li::marker{color:var(--a);font-weight:700}.no{color:#ff7a70;font-weight:700}.ban{border-color:#7a1410}.ban h3{color:#ff7a70}.bl,.okl{margin:0;padding-left:22px}.bl li{margin:6px 0}.okl li{list-style:'✔  ';margin:6px 0}.herobg{position:relative;border-radius:12px;overflow:hidden;height:min(78vh,560px);min-height:380px;background-size:cover;background-position:center 42%;display:flex;align-items:center;justify-content:center;color:var(--m);border:1px solid var(--b)}
+.leg{font-size:12px;color:var(--m);margin-top:8px}.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:60;background:#241d0e;border:1px solid var(--a);padding:10px 16px;border-radius:10px;color:var(--t)}
+.cond{border:1px solid var(--a);border-radius:10px;padding:10px 14px;background:#0b0905;margin-bottom:8px}.cond ul{margin:6px 0 0;padding-left:20px}.chk{display:flex;gap:8px;align-items:flex-start;color:var(--t)!important;margin-top:12px}.chk input{margin-top:4px}.ptable input{margin:2px 0}
+.top svg{width:18px;height:18px;fill:currentColor;vertical-align:-4px;margin-right:6px}.fsoc{margin-bottom:8px}.fsoc a{display:inline-block;margin:0 10px;color:var(--a2)}.fsoc svg{width:28px;height:28px;fill:currentColor}
+.rules{margin:0;padding-left:28px}.rules li{padding:8px 0;border-bottom:1px solid var(--b)}.rules li:last-child{border:0}.rules li::marker{color:var(--a);font-weight:700}.no{color:#ff7a70;font-weight:700}.ban{border-color:#7a1410}.ban h3{color:#ff7a70}
+.bl,.okl{margin:0;padding-left:22px}.bl li{margin:6px 0}.okl li{list-style:'✔  ';margin:6px 0}
+.herobg{position:relative;border-radius:12px;overflow:hidden;height:min(78vh,560px);min-height:380px;background-size:cover;background-position:center 42%;display:flex;align-items:center;justify-content:center;color:var(--m);border:1px solid var(--b)}
 .herobg img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:1}
 .herotxt{position:relative;z-index:2;background:rgba(0,0,0,.65);padding:24px;border-radius:12px;border:1px solid var(--b);backdrop-filter:blur(4px);margin:16px;text-align:center}
+.page{display:none}.page.active{display:block}
 </style>
 </head>
 <body>
 <header>
-  <div class="top"><a href="tel:+380000000000">📞 +38 (000) 000-00-00</a></div>
+  <div class="top"><a href="tel:+380670000000">📞 +38 (067) 000-00-00</a></div>
   <div class="bar"><span class="logo">NEAPOL LAKE</span></div>
 </header>
+
 <div class="wrap">
   <nav>
-    <button class="on" onclick="show('home')">Головна</button>
-    <button onclick="show('prices')">Ціни</button>
-    <button onclick="show('booking')">Бронювання</button>
-    <button onclick="show('admin')">Адмінка</button>
+    <button id="btn-home" class="on" onclick="showPage('home')">Головна</button>
+    <button id="btn-prices" onclick="showPage('prices')">Ціни</button>
+    <button id="btn-booking" onclick="showPage('booking')">Бронювання</button>
+    <button id="btn-admin" onclick="showPage('admin')">Адмінка</button>
   </nav>
+
   <main>
-    <!-- Головна сторінка -->
-    <div id="home" class="page">
+    <!-- Головна -->
+    <div id="page-home" class="page active">
       <div class="herobg">
-        <img src="public/logo.webp" alt="Neapol Lake">
+        <img src="logo.webp" alt="Neapol Lake">
         <div class="herotxt">
-          <h2>Ласкаво просимо</h2>
+          <h2>ЛАСКАВО ПРОСИМО</h2>
           <p>Найкраще коропове озеро для вашого відпочинку та трофейної риболовлі.</p>
         </div>
       </div>
       <br>
+      <h3>Галерея озера</h3>
       <div class="grid">
-        <div class="ph"><img src="public/foto_1.jpg" onclick="zoom(this)"></div>
-        <div class="ph"><img src="public/foto_2.jpg" onclick="zoom(this)"></div>
-        <div class="ph"><img src="public/foto_6.jpg" onclick="zoom(this)"></div>
+        <div class="ph"><img src="foto_1.jpg" onclick="zoomImg(this)"></div>
+        <div class="ph"><img src="foto_2.jpg" onclick="zoomImg(this)"></div>
+        <div class="ph"><img src="foto_6.jpg" onclick="zoomImg(this)"></div>
+        <div class="ph"><img src="foto_7.jpg" onclick="zoomImg(this)"></div>
+        <div class="ph"><img src="foto_8.jpg" onclick="zoomImg(this)"></div>
+        <div class="ph"><img src="foto_9.jpg" onclick="zoomImg(this)"></div>
       </div>
     </div>
-
-    <!-- Ціни -->
-    <div id="prices" class="page" style="display:none">
-      <h2>Наші ціни</h2>
-      <div class="card">
-        <p>Риболовля (доба) — 500 грн</p>
-        <p>Оренда сектора — 200 грн</p>
-      </div>
-    </div>
-
-    <!-- Бронювання та Оплата -->
-    <div id="booking" class="page" style="display:none">
-      <h2>Бронювання сектора</h2>
-      <div class="card">
