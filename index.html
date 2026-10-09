@@ -114,3 +114,75 @@ footer{text-align:center;padding:24px;color:var(--m);font-size:13px;border-top:1
         <div class="ph"><img src="foto_9.jpg" onclick="zoomImg(this)"></div>
       </div>
     </div>
+
+    <!-- Ціни -->
+Будьте обачні, використовуючи код.
+Наші ціни
+ПослугаВартістьРиболовля (доба, будні)500 грнРиболовля (доба, вихідні)600 грнОренда альтанки300 грн
+Бронювання секторів
+Оберіть сектор:
+Сектор №1
+Сектор №2
+Сектор №3
+
+Перейти до оплати
+
+Панель адміністратора
+Введіть пароль доступу:
+Увійти
+
+
+
+
+© 2026 Neapol Lake. Всі права захищені.
+function showPage(pageId) {
+document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+document.querySelectorAll('nav button').forEach(b => b.classList.remove('on'));
+document.getElementById('page-' + pageId).classList.add('active');
+document.getElementById('btn-' + pageId).classList.add('on');
+}
+function zoomImg(imgElement) {
+document.getElementById('lb-img').src = imgElement.src;
+document.getElementById('lb').style.display = 'flex';
+}
+// 💳 Запит до платіжної системи Монобанку
+async function handlePayment() {
+const chosenSector = document.getElementById('select-sector').value;
+try {
+const res = await fetch('/.netlify/functions/api/create-payment', {
+method: 'POST',
+headers: {'Content-Type': 'application/json'},
+body: JSON.stringify({ amount: 600, orderId: 'sector-' + chosenSector + '-' + Date.now() })
+});
+const data = await res.json();
+if (data.pageUrl) {
+window.location.href = data.pageUrl;
+} else {
+alert('Помилка банку: ' + (data.error || 'Не вдалося створити інвойс'));
+}
+} catch(e) {
+alert('Помилка зв'язку з сервером оплати');
+}
+}
+// 🔐 Вхід в систему адміністрування
+async function handleAdminLogin() {
+const enteredPass = document.getElementById('admin-password-input').value;
+const statusBox = document.getElementById('admin-response-msg');
+try {
+const res = await fetch('/.netlify/functions/api/admin-login', {
+method: 'POST',
+headers: {'Content-Type': 'application/json'},
+body: JSON.stringify({ password: enteredPass })
+});
+const data = await res.json();
+statusBox.style.display = 'block';
+if (data.success) {
+statusBox.innerHTML = 'Авторизація успішна! Доступ до бази відкрито.';
+} else {
+statusBox.innerHTML = 'Помилка: ' + data.error + '';
+}
+} catch(e) {
+statusBox.style.display = 'block';
+statusBox.innerHTML = 'Помилка авторизаційного сервера';
+}
+}
