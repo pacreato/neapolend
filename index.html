@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Neapol Lake — коропове озеро: ціни, сектори, бронювання, правила, новини.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Neapol Lake">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<title>Neapol Lake — коропове озеро</title>
+<style>
+:root{--bg:#050505;--c:#12100c;--t:#f3e7c9;--m:#a8996f;--a:#d4a64a;--a2:#f5d98a;--b:#3a2f17;--g:linear-gradient(135deg,#f5d98a,#c89a3c 55%,#8a6420);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:radial-gradient(ellipse at top,#1a1408 0,#050505 55%) fixed;color:var(--t);font:16px/1.55 system-ui,Segoe UI,Arial,sans-serif}
+h2,h3,.logo,nav button,.btn,th{font-family:Cinzel,"Trajan Pro",Georgia,"Times New Roman",serif;letter-spacing:.06em}
+header{background:#000;border-bottom:1px solid var(--a);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.top{display:flex;gap:16px;justify-content:flex-end;padding:6px 16px;font-size:13px;background:var(--g)}
+.top a{color:#14100a;text-decoration:none;font-weight:600}
+.bar{padding:10px 16px;text-align:center}
+.logo{font-weight:700;font-size:26px;letter-spacing:.3em;background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wrap{max-width:1120px;margin:0 auto;padding:16px;display:flex;gap:18px;align-items:flex-start}
+main{flex:1;min-width:0}
+nav{width:200px;flex:none;position:sticky;top:110px;display:flex;flex-direction:column;gap:6px;background:var(--c);border:1px solid var(--a);border-radius:12px;padding:10px;box-shadow:0 0 24px rgba(212,166,74,.12)}
+nav button{background:none;border:1px solid transparent;color:var(--t);padding:11px 14px;border-radius:8px;font-size:14px;text-align:right;cursor:pointer;text-transform:uppercase}
+nav button:hover{border-color:var(--b)}
+nav button.on{background:var(--g);color:#14100a;font-weight:700}
+h2{margin:6px 0 14px;color:var(--a2);text-transform:uppercase;letter-spacing:.14em;font-size:22px;border-bottom:1px solid var(--b);padding-bottom:8px}
+h3{color:var(--a2)}
+.card{background:var(--c);border:1px solid var(--b);border-radius:12px;padding:16px;margin-bottom:14px}
+.ph{width:100%;aspect-ratio:16/9;background:#1b160c;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--m);overflow:hidden;border:1px solid var(--b)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in}
+.ph.auto{aspect-ratio:auto;background:none}.ph.auto img{height:auto}
+.ph.logo{background:#000;aspect-ratio:16/10;border-color:transparent}.ph.logo img{object-fit:contain}
+.ph.short{aspect-ratio:16/6}
+.hero{position:relative}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.grid .ph{aspect-ratio:4/5}
+.news{border-left:4px solid var(--a)}.news small{color:var(--m)}.news.warn{border-left-color:#d9534f}
+label{display:block;margin:10px 0 4px;font-size:14px;color:var(--m)}
+input,select,textarea{width:100%;padding:10px;border:1px solid var(--b);border-radius:8px;background:#070604;color:var(--t);font:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--a)}
+.btn{background:var(--g);color:#14100a;border:0;border-radius:8px;padding:11px 18px;font-size:14px;font-weight:700;cursor:pointer;margin-top:12px;text-transform:uppercase}
+.btn.g{background:#241d0e;color:var(--a2);border:1px solid var(--b)}
+table{width:100%;border-collapse:collapse}td,th{padding:9px;border-bottom:1px solid var(--b);text-align:left}th{color:var(--a2)}
+.free{color:#6fcf8f}.busy{color:#ff7a70}
+a{color:var(--a2)}
+footer{text-align:center;padding:24px;color:var(--m);font-size:13px;border-top:1px solid var(--b)}
+#key{background:none;border:0;font-size:22px;cursor:pointer;opacity:.7}
+.msg{padding:10px;border-radius:8px;margin-top:10px;background:#1e180b;border:1px solid var(--b)}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.94);display:flex;align-items:center;justify-content:center;z-index:50;cursor:zoom-out}#lb img{max-width:96%;max-height:96%}
+@media(max-width:720px){.wrap{flex-direction:column-reverse;padding:12px}nav{width:100%;position:static;flex-direction:row;overflow-x:auto;padding:6px}nav button{white-space:nowrap;text-align:center;padding:9px 12px}.logo{font-size:20px}}
+.ptable th{padding-top:16px;font-size:16px;border-bottom:1px solid var(--a)}.ptable tr:first-child th{padding-top:6px}.ptable td.pr{text-align:right;white-space:nowrap;font-weight:700;color:var(--a2);font-size:17px}.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}.feat{display:flex;gap:12px;padding:12px;border:1px solid var(--b);border-radius:10px;background:#0b0905}.fi{font-size:26px;line-height:1}.fd{color:var(--m);font-size:14px;margin-top:2px}.tel{font-size:24px;font-weight:700;margin-bottom:6px}.tel a{text-decoration:none;color:var(--a2)}.btns{display:flex;gap:10px;flex-wrap:wrap}.btns .btn{margin-top:6px;text-decoration:none;display:inline-block}.cw{position:relative}.cal{position:absolute;z-index:20;left:0;width:100%;max-width:340px;background:#0b0905;border:1px solid var(--a);border-radius:12px;padding:10px;box-shadow:0 10px 30px #000}.cal.hide{display:none}
+.ch{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;color:var(--a2);font-weight:700}.ch button{background:none;border:1px solid var(--b);color:var(--a2);border-radius:8px;width:36px;height:36px;font-size:18px;cursor:pointer}
+.cg{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.wd{text-align:center;color:var(--m);font-size:12px}
+.dy{aspect-ratio:1;border:1px solid var(--b);background:#14100a;color:var(--t);border-radius:8px;cursor:pointer;font:inherit;padding:0}.dy:hover:not(:disabled){border-color:var(--a)}.dy:disabled{opacity:.25;cursor:default}
+.dy.busy{background:#8c1510;color:#fff;border-color:#ff3b30;animation:glow 1.4s ease-in-out infinite alternate}
+.dy.comp{background:#4a2600;color:#ffd7a8;border:1px dashed #ff9a3c}
+.dy.cur{outline:2px solid var(--a2);font-weight:700}
+@keyframes glow{from{box-shadow:0 0 2px #ff3b30}to{box-shadow:0 0 12px #ff3b30}}
+.leg{font-size:12px;color:var(--m);margin-top:8px}.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:60;background:#241d0e;border:1px solid var(--a);padding:10px 16px;border-radius:10px;color:var(--t)}.cond{border:1px solid var(--a);border-radius:10px;padding:10px 14px;background:#0b0905;margin-bottom:8px}.cond ul{margin:6px 0 0;padding-left:20px}.chk{display:flex;gap:8px;align-items:flex-start;color:var(--t)!important;margin-top:12px}.chk input{margin-top:4px}.ptable input{margin:2px 0}.top svg{width:18px;height:18px;fill:currentColor;vertical-align:-4px;margin-right:6px}.fsoc{margin-bottom:8px}.fsoc a{display:inline-block;margin:0 10px;color:var(--a2)}.fsoc svg{width:28px;height:28px;fill:currentColor}.rules{margin:0;padding-left:28px}.rules li{padding:8px 0;border-bottom:1px solid var(--b)}.rules li:last-child{border:0}.rules li::marker{color:var(--a);font-weight:700}.no{color:#ff7a70;font-weight:700}.ban{border-color:#7a1410}.ban h3{color:#ff7a70}.bl,.okl{margin:0;padding-left:22px}.bl li{margin:6px 0}.okl li{list-style:'✔  ';margin:6px 0}.herobg{position:relative;border-radius:12px;overflow:hidden;height:min(78vh,560px);min-height:380px;background-size:cover;background-position:center 42%;display:flex;align-items:center;justify-content:center;border:1px solid var(--b)}.herobg::before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.12) 45%,rgba(0,0,0,.55))}.herobg img{position:relative;height:90%;max-width:92%;object-fit:contain;filter:drop-shadow(0 4px 18px rgba(0,0,0,.65))}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+body{overflow-wrap:anywhere;min-height:100dvh}
+button,a,input,select,textarea,.dy{touch-action:manipulation}
+img,table{max-width:100%}
+header{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+.wrap{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+input,select,textarea{min-height:44px;font-size:16px}
+.btn{min-height:44px}
+:focus-visible{outline:2px solid var(--a2);outline-offset:2px}
+nav button{display:flex;align-items:center;gap:10px;text-align:left;justify-content:flex-start;min-height:44px}
+.ni{font-size:18px;line-height:1;width:24px;text-align:center}
+.herologo{display:block;margin:0 auto;width:auto;max-width:100%;height:min(52vh,460px);object-fit:contain;filter:drop-shadow(0 6px 28px rgba(212,166,74,.28));-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent)}
+.hero{padding:8px 0 4px}
+#lb img{touch-action:pinch-zoom}
+@media(max-width:720px){
+ body{padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+ :root{padding-bottom:0}
+ .wrap{flex-direction:column;padding-top:12px}
+ nav{position:fixed;left:0;right:0;bottom:0;top:auto;width:auto;z-index:30;flex-direction:row;justify-content:space-around;gap:2px;overflow:visible;border-radius:16px 16px 0 0;border:0;border-top:1px solid var(--a);padding:6px max(6px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left));background:rgba(8,6,3,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+ nav button{flex:1;min-width:0;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:6px 2px;font-size:10px;letter-spacing:0;text-align:center;border-radius:10px;text-transform:none}
+ .ni{font-size:21px;width:auto}
+ .nt{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .top{justify-content:center}
+ .logo{font-size:19px;letter-spacing:.22em}
+ h2{font-size:18px}
+ .herologo{height:min(34vh,300px)}
+ footer{padding-bottom:12px}
+}
+@media(max-width:480px){.grid{grid-template-columns:repeat(2,1fr)}.feats{grid-template-columns:1fr}.cal{max-width:none}.card{padding:12px}main{padding:0}}
+@media(min-width:1400px){.wrap{max-width:1240px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<header>
+<div class="top"><a href="https://www.tiktok.com/@neapollake?_r=1" target="_blank" rel="noopener" title="TikTok @neapollake" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 3c.3 2.3 1.7 3.8 4 4v3.1c-1.5 0-2.9-.4-4-1.2v6.2c0 3.2-2.5 5.4-5.5 5.4s-5.5-2.2-5.5-5.2c0-3.3 2.8-5.6 6.1-5.2v3.2c-1.6-.4-3 .5-3 2 0 1.2 1 2.1 2.2 2.1 1.3 0 2.2-.9 2.2-2.4V3z"/></svg>@neapollake</a><a href="https://t.me/NeapolLake" target="_blank" rel="noopener" title="Telegram NeapolLake" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 11.2l15.8-6.1c.8-.3 1.4.2 1.2 1.2l-2.7 12.7c-.2.9-.7 1.1-1.5.7l-4.1-3-2 1.9c-.2.2-.4.4-.8.4l.3-4.2 7.6-6.9c.3-.3-.1-.5-.5-.2l-9.400 5.900-4-1.300c-.9-.3-.9-.9.1-1.100z"/></svg>NeapolLake</a></div>
+<div class="bar"><div class="logo">NEAPOL LAKE</div></div></header>
+<div class="wrap"><main id="app"></main><nav id="nav"></nav></div>
+<footer><button id="key" title="Вхід для адміна">🔑</button><div class="fsoc"><a href="https://www.tiktok.com/@neapollake?_r=1" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 3c.3 2.3 1.7 3.8 4 4v3.1c-1.5 0-2.9-.4-4-1.2v6.2c0 3.2-2.5 5.4-5.5 5.4s-5.5-2.2-5.5-5.2c0-3.3 2.8-5.6 6.1-5.2v3.2c-1.6-.4-3 .5-3 2 0 1.2 1 2.1 2.2 2.1 1.3 0 2.2-.9 2.2-2.4V3z"/></svg></a><a href="https://t.me/NeapolLake" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 11.2l15.8-6.1c.8-.3 1.4.2 1.2 1.2l-2.7 12.7c-.2.9-.7 1.1-1.5.7l-4.1-3-2 1.9c-.2.2-.4.4-.8.4l.3-4.2 7.6-6.9c.3-.3-.1-.5-.5-.2l-9.400 5.900-4-1.300c-.9-.3-.9-.9.1-1.100z"/></svg></a></div><div>© Neapol Lake</div></footer>
+<script>
+// ===== ФОТО: сюди вставляються фото (data-URL або посилання). Ключі 1..15 = номери фото =====
+const IMG={"1": "images/foto_1.jpg", "2": "images/foto_2.jpg", "6": "images/foto_6.jpg", "7": "images/foto_7.jpg", "8": "images/foto_8.jpg", "9": "images/foto_9.jpg", "10": "images/foto_10.jpg", "11": "images/foto_11.jpg", "12": "images/foto_12.jpg", "13": "images/foto_13.jpg", "14": "images/foto_14.jpg", "15": "images/foto_15.jpg", "logoT": "images/logo.webp"};
+const WA="380960888807";
+const TABS=[["home","Головна"],["prices","Ціни"],["sectors","Сектори"],["rules","Правила"],["photos","Фото"],["news","Новини"]];
+let tab="home",admin=false,db=null,S={news:[],photos:[],comps:[]},B={};
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ph=(n,l,c)=>`<div class="ph ${c||''}">${IMG[n]?`<img src="${IMG[n]}" alt="${l||''}" loading="lazy" decoding="async">`:`Фото ${n}`}</div>`;
+const today=()=>new Date().toISOString().slice(0,10);
+
+// ===== сховище: сервер (server.js) + файл data/db.json =====
+let TOKEN=sessionStorage.getItem("t")||"",BERR="",PAYON=true;
+async function api(m,u,b){const r=await fetch(u,{method:m,headers:Object.assign({"Content-Type":"application/json"},TOKEN?{Authorization:"Bearer "+TOKEN}:{}),body:b?JSON.stringify(b):undefined});
+ const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||r.status);return j}
+async function load(){try{const x=await api("GET","/api/state");S=Object.assign({news:[],photos:[],comps:[]},x.site);PAYON=x.payment!==false;B={};x.bookings.forEach(b=>B[b.sector+"_"+b.date]=b);
+ if(admin&&!x.admin){TOKEN="";sessionStorage.removeItem("t")}admin=!!x.admin}catch(e){}render()}
+async function init(){await load();const q=new URLSearchParams(location.search);
+ if(q.get("paid")){toast("Дякуємо! Щойно оплата підтвердиться, бронь з'явиться як зайнята.");history.replaceState(null,"","/")}
+ setInterval(()=>{if(!document.hidden&&!document.querySelector("#app input:focus,#app textarea:focus"))load()},30000)}
+async function saveSite(){try{const x=await api("POST","/api/site",S);S=Object.assign(S,x.site)}catch(e){toast("Не вдалося зберегти")}render()}
+async function addBooking(r){try{const x=await api("POST","/api/bookings",Object.assign({},r,{admin,pct:pct()}));B[r.sector+"_"+r.date]=r;
+ if(x.pageUrl){PAY_URL=x.pageUrl;setTimeout(()=>{location.href=x.pageUrl},900)}return true}catch(e){BERR=e.message;return false}}
+const compOn=d=>S.comps.find(c=>d>=c.from&&d<=c.to);
+
+const NI={home:"🏠",prices:"💰",sectors:"📍",rules:"📜",photos:"📷",news:"📰"};
+function nav(){$("#nav").setAttribute("aria-label","Меню");$("#nav").innerHTML=TABS.map(([k,l])=>`<button class="${k==tab?'on':''}" ${k==tab?'aria-current="page"':''} onclick="go('${k}')"><span class="ni" aria-hidden="true">${NI[k]}</span><span class="nt">${l}</span></button>`).join("")+(admin?`<button onclick="admin=false;render()"><span class="ni" aria-hidden="true">🚪</span><span class="nt">Вийти</span></button>`:"")}
+function go(t){if(t!=tab)BOOKMSG="";tab=t;render();scrollTo(0,0)}
+function newsHtml(list){return list.length?list.map(n=>`<div class="card news ${n.warn?'warn':''}"><small>${esc(n.date)}${n.warn?' · ⚠️ важливо':''}</small><h3 style="margin:4px 0">${esc(n.title)}</h3><div>${esc(n.text).replace(/\n/g,'<br>')}</div>${admin?`<button class="btn g" onclick="delNews('${n.id}')">Видалити</button>`:''}</div>`).join(""):`<div class="card">Новин поки немає.</div>`}
+function delNews(id){S.news=S.news.filter(n=>n.id!=id);saveSite()}
+function delPhoto(id){S.photos=S.photos.filter(p=>p.id!=id);saveSite()}
+
+const V={
+home:()=>`<div class="hero"><img class="herologo" src="${IMG.logoT}" alt="Neapol Lake" width="720" height="784"></div>
+ <h2>Чому саме Neapol Lake</h2><div class="card"><p style="margin-top:0">Приїжджайте не просто на рибалку, а на повноцінний відпочинок: усе продумано, щоб ви ловили, а не вирішували побутові питання.</p><div class="feats"><div class="feat"><div class="fi">🎣</div><div><b>15 секторів, 3 зони</b><div class="fd">Свій сектор і свій берег для кожного. Місця вистачає і компанії, і тим, хто приїхав у тиші побути наодинці.</div></div></div><div class="feat"><div class="fi">🛡️</div><div><b>Охорона та відеоспостереження</b><div class="fd">Берег під наглядом, тож можна розслабитись і думати лише про клювання.</div></div></div><div class="feat"><div class="fi">🧰</div><div><b>Все для ловлі в оренду</b><div class="fd">Мат-люлька, підсак, слінг, крісла, розкладачка. Забули щось вдома? Не біда, усе знайдеться на місці.</div></div></div><div class="feat"><div class="fi">🐟</div><div><b>Спіймав — відпустив</b><div class="fd">Береження риби — наше правило. Тому короп тут росте, а трофеї не закінчуються.</div></div></div><div class="feat"><div class="fi">🚐</div><div><b>Лишайтесь з ночівлею</b><div class="fd">Є будинок на колесах, а ще мангал і квадроцикл для прогулянок, якщо хочеться розім'ятись.</div></div></div><div class="feat"><div class="fi">🚗</div><div><b>Два заїзди до водойми</b><div class="fd">Під'їжджайте до свого сектору зручно, без пошуків і довгих пішки з важкими сумками.</div></div></div><div class="feat"><div class="fi">🏆</div><div><b>Змагання та трофеї</b><div class="fd">Проводимо змагання. Фото найкращих уловів дивіться у вкладці «Фото», а наступні дати шукайте в новинах.</div></div></div><div class="feat"><div class="fi">🌲</div><div><b>Озеро серед лісу</b><div class="fd">Вода, очерет і сосни навколо. Хороше місце, щоб вимкнути телефон і просто рибалити.</div></div></div></div></div><div class="card contact"><h3 style="margin-top:0">Бронювання та як нас знайти</h3><div class="tel">📞 <a href="tel:+380960888807">096 088 88 07</a></div><div class="btns"><button class="btn" onclick="go('sectors')">Забронювати сектор</button><a class="btn" href="tel:+380960888807">Подзвонити</a><a class="btn" href="https://wa.me/380960888807" target="_blank" rel="noopener">WhatsApp</a><a class="btn" href="https://maps.app.goo.gl/PnYptmSuRZpHDMA66" target="_blank" rel="noopener">📍 Google Maps</a></div></div><h2>Новини</h2>${newsHtml(S.news.slice(0,3))}`,
+prices:()=>`<h2>Ціни</h2>${ph(1,"Neapol Lake","logo short")}<div style="height:12px"></div><div class="card"><table class="ptable"><tr><th colspan="3">Ціни на сезон 2026</th></tr>${priceRows("season")}${admin?`<tr><td colspan="3"><button class="btn g" onclick="addRow('season')">+ Додати рядок</button></td></tr>`:""}<tr><th colspan="3">Оренда спорядження (на добу)</th></tr>${priceRows("gear")}${admin?`<tr><td colspan="3"><button class="btn g" onclick="addRow('gear')">+ Додати рядок</button></td></tr>`:""}</table>${admin?`<p style="color:var(--m);font-size:13px">Перший рядок у «Ціни на сезон» — вартість доби на секторі: від нього рахується оплата бронювання (50% — ${prepay()} грн, 100% — ${sectorPrice()} грн).</p><button class="btn" onclick="saveP()">Зберегти ціни</button>`:""}</div>`,
+sectors:()=>{const d=today();return `<h2>Сектори</h2>${ph(2,"Схема секторів","auto")}<p style="color:var(--m);font-size:14px">Нумерація секторів — зліва направо. Зона A — сектори 1–6, зона B — 7–12, зона C — 13–15. На водойму є два заїзди.</p>
+ <div class="card" style="margin-top:14px"><h3 style="margin-top:0">Бронювання</h3><div class="cond"><b>Умови бронювання</b><ul><li>${BOOK_TXT}</li><li>Одна доба на секторі — ${sectorPrice()} грн. Бронювати можна від 1 до 5 діб поспіль; оплата — 50% або 100% вартості всього періоду.</li></ul></div>
+ <label>Ім'я</label><input id="bn" autocomplete="name" autocapitalize="words" enterkeyhint="next"><label>Номер телефону</label><input id="bp" type="tel" inputmode="tel" autocomplete="tel" placeholder="+380..." enterkeyhint="done">
+ <label>Сектор</label><select id="bs" onchange="calRefresh()">${Array.from({length:15},(_,i)=>`<option>${i+1}</option>`).join("")}</select>
+ <label>Дата</label><div class="cw"><input id="bd" readonly placeholder="Оберіть дату заїзду ▾" onclick="toggleCal()"><div id="cal" class="cal hide"></div></div>
+ <label>Кількість діб (до 5)</label><select id="bdays" onchange="calRefresh()">${[1,2,3,4,5].map(n=>`<option value="${n}">${n}</option>`).join("")}</select><div id="brange" style="color:var(--m);font-size:14px;margin-top:6px"></div>
+ ${admin?"":`<label>Розмір оплати</label><select id="bpct"><option value="50">50% — ${prepay()} грн</option><option value="100">100% — ${sectorPrice()} грн</option></select><label class="chk"><input type="checkbox" id="ba" style="width:auto"> Ознайомлений(-а) з умовами та погоджуюсь внести оплату</label>`}<div id="bm"></div><div id="bok">${BOOKMSG}</div><button class="btn" onclick="book()">${admin?"Додати бронь (адмін)":"Забронювати та сплатити"}</button></div>
+ <div class="card"><h3 style="margin-top:0">Таблиця секторів</h3><div style="overflow-x:auto"><table><tr><th>Сектор</th><th>Статус на обраний період</th></tr>${Array.from({length:15},(_,i)=>`<tr><td>№${i+1}</td><td id="st${i+1}">—</td></tr>`).join("")}</table></div></div>
+ ${admin&&!PAYON?`<div class="card" style="border-color:#ff7a70"><b style="color:#ff7a70">⚠️ Оплата Monobank не підключена.</b> Бронювання зараз іде лише через WhatsApp. Додайте змінну MONO_TOKEN на сервері (на Netlify — у Environment variables) і перезапустіть сайт. Перевірка: відкрийте адресу сайту з /api/health в кінці.</div>`:""}${admin?adminList():""}${S.comps.length?`<div class="card"><b>Змагання (бронювання закрите):</b><br>${S.comps.map(c=>esc(c.from)+" — "+esc(c.to)+(c.name?" · "+esc(c.name):"")).join("<br>")}</div>`:""}`},
+rules:()=>`<h2>Правила водойми</h2><div class="card"><ol class="rules">${RULES.map(r=>`<li>${rl(r)}</li>`).join("")}</ol></div><div class="card"><h3 style="margin-top:0">Умови бронювання</h3><p style="margin:0">${esc(BOOK_TXT)}</p></div><div class="card ban"><h3 style="margin-top:0">На водоймі категорично заборонено</h3><ul class="bl">${BAN.map(r=>`<li>${rl(r)}</li>`).join("")}</ul></div><div class="card"><h3 style="margin-top:0">Обов'язкова наявність по прибуттю на водойму</h3><ul class="okl">${MUST.map(r=>`<li>${esc(r)}</li>`).join("")}</ul></div><p style="text-align:center;color:var(--a2);font-style:italic">Дотримуйтесь правил — збережемо рибу та природу для майбутніх поколінь!</p>`,
+photos:()=>{const base=[6,7,8,9,10,11,12,13,14,15].map(n=>ph(n,"Трофей"));
+ const ex=S.photos.map(p=>`<div><div class="ph"><img src="${p.src}" alt="Трофей" loading="lazy" decoding="async"></div>${admin?`<button class="btn g" onclick="delPhoto('${p.id}')">Видалити</button>`:""}</div>`);
+ return `<h2>Фото трофеїв</h2>${admin?`<div class="card" id="drop"><b>Додати фото</b> — оберіть або перетягніть файли сюди<input type="file" accept="image/*" multiple onchange="addPhotos(this.files)"></div>`:""}<div class="grid">${ex.join("")}${base.join("")}</div>`},
+news:()=>`<h2>Новини</h2>${admin?`<div class="card"><b>Нова новина</b><label>Заголовок</label><input id="nt"><label>Текст</label><textarea id="nx" rows="3"></textarea><label><input type="checkbox" id="nw" style="width:auto"> Важливо (заборона лову / змагання)</label><button class="btn" onclick="addNews()">Опублікувати</button></div>
+ <div class="card"><b>Змагання (закрити бронювання)</b><label>З</label><input type="date" id="cf"><label>По</label><input type="date" id="ct"><label>Назва</label><input id="cn"><button class="btn" onclick="addComp()">Додати змагання</button>${S.comps.map((c,i)=>`<div class="msg">${esc(c.from)} — ${esc(c.to)} ${esc(c.name||'')} <button class="btn g" style="margin:0 0 0 8px" onclick="S.comps.splice(${i},1);saveSite()">✕</button></div>`).join("")}</div>
+ ${S.news.length?"":""}`:""}${newsHtml(S.news)}`};
+
+function render(){nav();const k=tab=="sectors"&&$("#bn")?{n:$("#bn").value,p:$("#bp").value,s:$("#bs").value,x:$("#bpct")?$("#bpct").value:"50",y:$("#bdays")?$("#bdays").value:"1",d:getD(),o:!$("#cal").classList.contains("hide")}:null;
+ $("#app").innerHTML=V[tab]();
+ if(tab=="sectors"){if(k){$("#bn").value=k.n;$("#bp").value=k.p;$("#bs").value=k.s;if($("#bpct"))$("#bpct").value=k.x;if($("#bdays"))$("#bdays").value=k.y;if(k.d)setD(k.d);if(k.o)$("#cal").classList.remove("hide")}calRefresh()}}
+function chk(){const d=getD(),n=days(),s=$("#bs")?$("#bs").value:1,cf=d?conflict(s,d,n):null,m=$("#bm");if(!m)return;
+ m.innerHTML=cf?(cf.type==="comp"?`<div class="msg busy">${fmtD(cf.date)} — змагання${cf.c.name?" ("+esc(cf.c.name)+")":""}: бронювання недоступне.</div>`:`<div class="msg busy">Сектор ${s} зайнятий ${fmtD(cf.date)}. Оберіть інші дати або сектор.</div>`):"";
+ const br=$("#brange");if(br)br.textContent=d?`Заїзд ${fmtD(d)}, виїзд ${fmtD(addDays(d,n))} · ${n} ${dword(n)}`:"";
+ for(let i=1;i<=15;i++){const e=$("#st"+i);if(!e)continue;const c=d?conflict(i,d,n):null;e.innerHTML=!d?"—":c?(c.type==="comp"?'<span class="busy">змагання</span>':'<span class="busy">зайнято</span>'):'<span class="free">вільно</span>'}}
+async function book(){const r={name:$("#bn").value.trim(),phone:$("#bp").value.trim(),sector:$("#bs").value,date:getD(),days:days()};
+ const m=$("#bm");BOOKMSG="";$("#bok").innerHTML="";if(admin){r.name=r.name||"Адмін";r.phone=r.phone||"—"}if(!r.name||!r.phone||!r.date){m.innerHTML='<div class="msg busy">Заповніть усі поля.</div>';return}
+ if(conflict(r.sector,r.date,r.days)){chk();return}
+ if(!admin&&!$("#ba").checked){m.innerHTML='<div class="msg busy">Підтвердіть, що ознайомились з умовами бронювання.</div>';return}
+ r.amount=admin?0:payAmt();r.paid=admin;if(!(await addBooking(r))){BOOKMSG=`<div class="msg busy">${esc(BERR||"Цей сектор на цю дату вже заброньовано.")}</div>`;$("#bok").innerHTML=BOOKMSG;calRefresh();return}
+ if(admin){BOOKMSG='<div class="msg">✅ Бронь додано.</div>';finishBooking();return}
+ const t=`Нова заявка на бронювання%0AІм'я: ${encodeURIComponent(r.name)}%0AТелефон: ${encodeURIComponent(r.phone)}%0AСектор: ${r.sector}%0AЗаїзд: ${fmtD(r.date)}%0AВиїзд: ${fmtD(addDays(r.date,r.days))} (${r.days} ${dword(r.days)})%0AОплата ${pct()}%25: ${r.amount} грн`;
+ BOOKMSG=`<div class="msg">✅ Заявку збережено: сектор ${r.sector}, заїзд ${fmtD(r.date)}, виїзд ${fmtD(addDays(r.date,r.days))} (${r.days} ${dword(r.days)}). Щоб бронь діяла, внесіть оплату ${r.amount} грн.${PAY_URL?"":" Реквізити для оплати надішле адміністратор у WhatsApp."}<div class="btns" style="margin-top:8px">${PAY_URL?`<a class="btn" href="${PAY_URL}" target="_blank" rel="noopener">Сплатити (Monobank)</a>`:""}<a class="btn" href="https://wa.me/${WA}?text=${t}" target="_blank" rel="noopener">Підтвердити у WhatsApp</a></div><div style="margin-top:8px;font-size:14px">Або зателефонуйте: <a href="tel:+380960888807">096 088 88 07</a></div></div>`;
+ finishBooking()}
+function addNews(){const t=$("#nt").value.trim();if(!t)return;S.news.unshift({id:Date.now(),title:t,text:$("#nx").value,warn:$("#nw").checked,date:today()});saveSite()}
+function addComp(){const f=$("#cf").value,t=$("#ct").value||f;if(!f)return;S.comps.push({from:f,to:t,name:$("#cn").value});saveSite()}
+function shrink(file){return new Promise(res=>{const r=new FileReader();r.onload=()=>{const i=new Image();i.onload=()=>{const k=Math.min(1,900/Math.max(i.width,i.height)),c=document.createElement("canvas");c.width=i.width*k;c.height=i.height*k;c.getContext("2d").drawImage(i,0,0,c.width,c.height);res(c.toDataURL("image/jpeg",.72))};i.src=r.result};r.readAsDataURL(file)})}
+async function addPhotos(fs){for(const f of fs)S.photos.unshift({id:Date.now()+Math.random(),src:await shrink(f)});saveSite()}
+
+
+let PAY_URL="";
+const DEF_PRICES={season:[{n:"Риболовля, доба (сектор)",p:"1200 грн"},{n:"Денна риболовля",p:"800 грн",d:"з 7:00 до 19:00, тільки будні дні з понеділка по четвер"},{n:"Оренда будинку на колесах",p:"2000 грн",d:"за добу"},{n:"Оренда квадроцикла",p:"1200 грн",d:"за годину"}],
+gear:[{n:"Мат-люлька",p:"200 грн"},{n:"Підсак",p:"100 грн"},{n:"Сумка (слінг)",p:"100 грн"},{n:"Решітка / шампури для мангалу",p:"100 грн"},{n:"Крісло коропове",p:"200 грн"},{n:"Розкладачка коропова",p:"300 грн"},{n:"Крісло звичайне",p:"100 грн"}]};
+const P=()=>S.prices||DEF_PRICES;
+const sectorPrice=()=>{const r=P().season[0];return r?parseInt(String(r.p).replace(/\s/g,""))||0:0};
+const prepay=()=>Math.round(sectorPrice()/2);
+const pct=()=>{const e=$("#bpct");return e&&e.value=="100"?100:50};
+const payAmt=()=>Math.round(sectorPrice()*days()*pct()/100);
+function priceRows(s){const a=P()[s];
+ return admin?a.map((r,i)=>`<tr><td><input data-s="${s}" data-i="${i}" data-f="n" value="${esc(r.n||"")}" placeholder="Назва"><input data-s="${s}" data-i="${i}" data-f="d" value="${esc(r.d||"")}" placeholder="Примітка (необов'язково)"></td><td class="pr"><input data-s="${s}" data-i="${i}" data-f="p" value="${esc(r.p||"")}" style="width:110px" placeholder="0 грн"></td><td><button class="btn g" style="margin:0" onclick="delRow('${s}',${i})">✕</button></td></tr>`).join("")
+ :a.map(r=>`<tr><td>${esc(r.n)}${r.d?`<br><small style="color:var(--m)">${esc(r.d)}</small>`:""}</td><td class="pr">${esc(r.p)}</td></tr>`).join("")}
+function collectP(){const o={season:[],gear:[]};document.querySelectorAll("#app input[data-s]").forEach(e=>{const s=e.dataset.s,i=+e.dataset.i;o[s][i]=o[s][i]||{};o[s][i][e.dataset.f]=e.value});
+ for(const s in o)o[s]=o[s].filter(Boolean);return o}
+function delRow(s,i){S.prices=collectP();S.prices[s].splice(i,1);render()}
+function addRow(s){S.prices=collectP();S.prices[s].push({n:"",p:"",d:""});render()}
+async function saveP(){const o=collectP();for(const s in o)o[s]=o[s].filter(r=>(r.n||"").trim()||(r.p||"").trim());S.prices=o;await saveSite();toast("Ціни збережено")}
+async function markPaid(k){try{await api("PATCH","/api/bookings/"+k+"/paid")}catch(e){toast("Помилка")}load()}
+
+const RULES=[
+`Риболовля на водоймі дозволена лише за попередньою згодою з Адміністрацією!`,
+`Заїзд та виїзд на водойму відбувається лише в світлу пору доби, в разі непередбачуваної ситуації лише за попереднім погодженням з охороною.`,
+`По прибуттю на водойму, рибалка звертається до будівлі охорони, де ознайомлюється та погоджується з правилами, оплачує послуги згідно тарифу, після чого робиться запис в Журналі відвідувачів, рибалка отримує рибальську перепустку з Часом, датою заїзду та виїзду.`,
+`Бронювання секторів здійснюється після ознайомлення з правилами водойми з 50%, або 100% попередньою оплатою.`,
+`Вилов риби здійснюється в спеціально обладнаних секторах, по принципу (Спіймав-Відпустив). Дозволена добова норма 3 кг Карася можна забирати.`,
+`В одному секторі дозволяється використовувати не більше 4 (чотирьох) Коропових, або фідерних Вудлищ + 1 (одна поплавочна).`,
+`В секторі може знаходитись до 3 осіб (Дружина, діти — безкоштовно). Якщо кількість перевищує 3 (три) особи, за кожну наступну +200 грн.`,
+`Всі відвідувачі зобов'язані дотримуватись чистоти в секторі, дбайливо ставитись до майна, флори та фауни водойми. Для дотримання порядку вся берегова лінія знаходиться під відеоспостереженням.`,
+`У випадку навмисного та ненавмисного пошкодження майна водойми, відвідувач зобов'язаний відшкодувати 100% вартості.`,
+`Для риболовлі дозволено використовувати Жилку не менше 0,25 мм (моноволосінь). Використання нитки ЗАБОРОНЕНО.`,
+`Для риболовлі дозволено використовувати “Безпечні монтажі”, які з'єднані лідкор з основною волосінню петлею (будь-які застібки, вертлюги, карабіни) ЗАБОРОНЕНІ.`,
+`Використовувати не спортивні, аматорські монтажі типу (Макушатник, Вбивця карася, Спутник і т.п.) ЗАБОРОНЕНО!`,
+`Всі дії з рибою повинні відбуватись на коропковому мату (люльці).`,
+`Спіймана риба має бути випущена у водойму протягом 5 хвилин. У разі пошкоджень при виважуванні риба має бути оброблена антисептиком. Переміщення спійманої риби до води має бути виключно на коропковому мату, або спеціальній сумці (Слінг).`,
+`Для закорму дозволено використовувати сипучу прикормку, бойли, пелетс. Дозволено використовувати тільки варені зернові культури (Тигровий горіх, Горох, Ферментовані зернові). Заборонено! (Дозволено в якості насадки).`,
+`Дозволено користуватись електро Корабликом для закорму на відстань до 100 м, більше 100 м ЗАБОРОНЕНО. Човнами для будь-яких цілей користуватись заборонено.`,
+`За пошкодження, необережне поводження, умертвіння риби накладається штраф 1000 грн за кілограм ваги!`,
+`Після закінчення риболовлі, відвідувач зобов'язаний прибрати місце риболовлі, повідомити охорону про свій виїзд, та надати транспортний засіб для огляду.`,
+`Адміністрація має право видалити відвідувача (команду) за будь-яке порушення цих правил!`];
+const BAN=[
+`Починати риболовлю без попередньої згоди та дозволу (Адміністрації).`,
+`Зберігати рибу (в тому числі і в коропових мішках).`,
+`Використання в якості прикормки (Тигровий горіх, Горох, сирі або Ферментовані зернові).`,
+`Переміщатись на авто по території в темну пору доби.`,
+`Розводити багаття на відкритому ґрунті. Смітити, кидати недопалки на землю.`,
+`Купатися у водоймі.`,
+`Заходити в сектор інших відвідувачів без їхнього дозволу.`,
+`Освітлювати воду фарами та будь-яким яскравим цілеспрямованим світлом.`,
+`Фотографуватись з рибою стоячи (риба повинна бути виключно над матом, не більше 30 см над матом).`,
+`Надмірно шуміти, кричати, голосно включати музику.`];
+const MUST=[`Риболовний мат-люлька`,`Великий коропковий підсак (круглий або трикутний з м'якої тканини)`,`Сумка для зважування та відпускання риби (Слінг)`,`Антисептик для обробки ран`];
+const rl=s=>esc(s).replace(/(ЗАБОРОНЕНО!?|ЗАБОРОНЕНІ\.?|Заборонено!)/g,'<span class="no">$1</span>');
+const BOOK_TXT=`Бронювання здійснюється з передоплатою 50 або 100%. У разі неприбуття або відмови від прибуття на риболовлю передоплата не повертається! У цьому випадку рибалка має право попередити адміністрацію водойми за 5 діб та перенести свій візит на риболовлю, обравши той самий сектор або інший, за умови наявності вільного місця (на дату, яку він переобрав).`;
+const addDays=(d,n)=>{const x=new Date(d+"T00:00:00Z");x.setUTCDate(x.getUTCDate()+n);return x.toISOString().slice(0,10)};
+const fmtD=d=>d.split("-").reverse().join(".");
+const days=()=>{const e=$("#bdays");return e?Math.min(5,Math.max(1,+e.value||1)):1};
+const dword=n=>n==1?"доба":n<5?"доби":"діб";
+const busyOn=(s,d)=>Object.values(B).find(b=>+b.sector==+s&&d>=b.date&&d<=addDays(b.date,(b.days||1)-1));
+const conflict=(s,d,n)=>{for(let i=0;i<n;i++){const x=addDays(d,i),c=compOn(x);if(c)return{type:"comp",date:x,c};if(busyOn(s,x))return{type:"busy",date:x}}return null};
+function payUpd(){const o=$("#bpct");if(!o)return;const t=sectorPrice()*days();o.options[0].textContent="50% — "+Math.round(t/2)+" грн";o.options[1].textContent="100% — "+t+" грн"}
+let BOOKMSG="";
+function finishBooking(){const o=$("#bok");if(o)o.innerHTML=BOOKMSG;$("#bn").value="";$("#bp").value="";const a=$("#ba");if(a)a.checked=false;setD("");const dd=$("#bdays");if(dd)dd.value="1";$("#bm").innerHTML="";calRefresh();if(o)o.scrollIntoView({block:"center",behavior:"smooth"})}
+const MN=["Січень","Лютий","Березень","Квітень","Травень","Червень","Липень","Серпень","Вересень","Жовтень","Листопад","Грудень"];
+let cm=new Date();cm=new Date(cm.getFullYear(),cm.getMonth(),1);
+const getD=()=>{const e=$("#bd");return e&&e.dataset.v||""};
+const setD=k=>{const e=$("#bd");e.dataset.v=k;e.value=k.split("-").reverse().join(".")};
+const iso=(y,m,d)=>y+"-"+String(m+1).padStart(2,"0")+"-"+String(d).padStart(2,"0");
+function toggleCal(){const c=$("#cal");c.classList.toggle("hide");calRefresh();if(!c.classList.contains("hide"))setTimeout(()=>c.scrollIntoView({block:"nearest",behavior:"smooth"}),60)}
+function calNav(n){cm=new Date(cm.getFullYear(),cm.getMonth()+n,1);calRefresh()}
+function pick(k){setD(k);$("#cal").classList.add("hide");calRefresh()}
+function calRefresh(){const c=$("#cal");if(!c)return;payUpd();chk();if(c.classList.contains("hide"))return;
+ const s=$("#bs").value,sel=getD(),t=today(),y=cm.getFullYear(),m=cm.getMonth(),first=(new Date(y,m,1).getDay()+6)%7,n=new Date(y,m+1,0).getDate();
+ let g=["Пн","Вт","Ср","Чт","Пт","Сб","Нд"].map(x=>`<b class="wd">${x}</b>`).join("")+"<i></i>".repeat(first);
+ for(let d=1;d<=n;d++){const k=iso(y,m,d),past=k<t,cls=(busyOn(s,k)?"busy":compOn(k)?"comp":"")+(sel&&k>=sel&&k<=addDays(sel,days()-1)?" cur":"");
+  g+=`<button type="button" class="dy ${cls}" ${past?"disabled":""} onclick="pick('${k}')">${d}</button>`}
+ c.innerHTML=`<div class="ch"><button type="button" onclick="calNav(-1)">‹</button><span>${MN[m]} ${y}</span><button type="button" onclick="calNav(1)">›</button></div><div class="cg">${g}</div><div class="leg">Сектор ${s}: <span class="busy">■ зайнято</span> · <span style="color:#ff9a3c">■ змагання</span> · ■ вільно</div>`}
+function adminList(){const l=Object.entries(B).map(([k,b])=>Object.assign({k},b)).filter(b=>addDays(b.date,b.days||1)>=today()).sort((a,b)=>a.date.localeCompare(b.date)||a.sector-b.sector);
+ return `<div class="card"><h3 style="margin-top:0">Бронювання (адмін)</h3>${l.length?`<div style="overflow-x:auto"><table><tr><th>Дата</th><th>Сектор</th><th>Ім'я</th><th>Телефон</th><th>Оплата</th><th></th></tr>${l.map(b=>`<tr><td>${esc(fmtD(b.date))}${(b.days||1)>1?` → ${esc(fmtD(addDays(b.date,b.days)))} (${b.days} ${dword(b.days)})`:""}</td><td>${esc(b.sector)}</td><td>${esc(b.name)}</td><td>${esc(b.phone)}</td><td>${b.amount?esc(b.amount)+" грн ":""}${b.paid?"✅":"⏳"}</td><td>${b.paid?"":`<button class="btn" style="margin:0 6px 0 0" onclick="markPaid('${esc(b.k)}')">Оплачено</button>`}<button class="btn g" style="margin:0" onclick="cancelB('${esc(b.k)}',this)">Скасувати</button></td></tr>`).join("")}</table></div>`:"Бронювань поки немає."}</div>`}
+async function cancelB(k,el){if(el&&!el.dataset.c){el.dataset.c=1;el.textContent="Точно скасувати?";setTimeout(()=>{el.dataset.c="";el.textContent="Скасувати"},4000);return}
+ try{await api("DELETE","/api/bookings/"+k)}catch(e){toast("Не вдалося скасувати")}
+ delete B[k];render()}
+document.addEventListener("pointerdown",e=>{if(!e.target.closest(".cw")){const c=$("#cal");if(c&&!c.classList.contains("hide")){c.classList.add("hide")}}});
+$("#key").onclick=()=>{if(admin){admin=false;render();return}openLogin()};
+function openLogin(){const d=document.createElement("div");d.id="lb";d.style.cursor="default";
+ d.innerHTML=`<div class="card" style="width:min(340px,92%);margin:0"><h3 style="margin-top:0">Вхід адміна</h3><input id="lp" type="password" placeholder="Пароль" autocomplete="off"><div id="le" class="busy" style="min-height:24px;margin-top:6px"></div><div class="btns"><button class="btn" id="lok">Увійти</button><button class="btn g" id="lno">Скасувати</button></div></div>`;
+ document.body.appendChild(d);const i=d.querySelector("#lp");i.focus();
+ const ok=async()=>{try{const r=await api("POST","/api/login",{password:i.value});TOKEN=r.token;sessionStorage.setItem("t",TOKEN);admin=true;d.remove();load()}catch(e){d.querySelector("#le").textContent="Невірний пароль";i.select()}};
+ d.querySelector("#lok").onclick=ok;d.querySelector("#lno").onclick=()=>d.remove();i.onkeydown=e=>{if(e.key==="Enter")ok()}}
+function toast(t){const e=document.createElement("div");e.className="toast";e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),3500)}
+document.addEventListener("click",e=>{const i=e.target.closest(".ph img");if(i){const d=document.createElement("div");d.id="lb";d.innerHTML=`<img src="${i.src}">`;d.onclick=()=>d.remove();document.body.appendChild(d)}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){const l=$("#lb");if(l)l.remove();const c=$("#cal");if(c)c.classList.add("hide")}});
+document.addEventListener("dragover",e=>e.preventDefault());
+document.addEventListener("drop",e=>{if(admin&&tab=="photos"&&e.dataTransfer.files.length){e.preventDefault();addPhotos(e.dataTransfer.files)}});
+render();init();
+</script><script>if("serviceWorker"in navigator&&location.protocol!=="file:")addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))</script>
+</body></html>
